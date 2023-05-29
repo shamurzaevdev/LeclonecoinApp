@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		655723082A256E4E00B1E1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723072A256E4E00B1E1DC /* AppDelegate.swift */; };
+		6557230A2A256E4E00B1E1DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723092A256E4E00B1E1DC /* SceneDelegate.swift */; };
+		6557230C2A256E4E00B1E1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557230B2A256E4E00B1E1DC /* ViewController.swift */; };
+		6557230F2A256E4E00B1E1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6557230D2A256E4E00B1E1DC /* Main.storyboard */; };
+		655723112A256E5500B1E1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655723102A256E5500B1E1DC /* Assets.xcassets */; };
+		655723142A256E5500B1E1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655723122A256E5500B1E1DC /* LaunchScreen.storyboard */; };
+		6557231F2A256E5600B1E1DC /* LeclonecoinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557231E2A256E5600B1E1DC /* LeclonecoinAppTests.swift */; };
+		655723292A256E5600B1E1DC /* LeclonecoinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723282A256E5600B1E1DC /* LeclonecoinAppUITests.swift */; };
+		6557232B2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557232A2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6557231B2A256E5600B1E1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 655722FC2A256E4E00B1E1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 655723032A256E4E00B1E1DC;
+			remoteInfo = LeclonecoinApp;
+		};
+		655723252A256E5600B1E1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 655722FC2A256E4E00B1E1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 655723032A256E4E00B1E1DC;
+			remoteInfo = LeclonecoinApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		655723042A256E4E00B1E1DC /* LeclonecoinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeclonecoinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		655723072A256E4E00B1E1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		655723092A256E4E00B1E1DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6557230B2A256E4E00B1E1DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6557230E2A256E4E00B1E1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		655723102A256E5500B1E1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		655723132A256E5500B1E1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		655723152A256E5500B1E1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6557231A2A256E5600B1E1DC /* LeclonecoinAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeclonecoinAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6557231E2A256E5600B1E1DC /* LeclonecoinAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclonecoinAppTests.swift; sourceTree = "<group>"; };
+		655723242A256E5600B1E1DC /* LeclonecoinAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeclonecoinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		655723282A256E5600B1E1DC /* LeclonecoinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclonecoinAppUITests.swift; sourceTree = "<group>"; };
+		6557232A2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclonecoinAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		655723012A256E4E00B1E1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655723172A256E5600B1E1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655723212A256E5600B1E1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		655722FB2A256E4E00B1E1DC = {
+			isa = PBXGroup;
+			children = (
+				655723062A256E4E00B1E1DC /* LeclonecoinApp */,
+				6557231D2A256E5600B1E1DC /* LeclonecoinAppTests */,
+				655723272A256E5600B1E1DC /* LeclonecoinAppUITests */,
+				655723052A256E4E00B1E1DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		655723052A256E4E00B1E1DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				655723042A256E4E00B1E1DC /* LeclonecoinApp.app */,
+				6557231A2A256E5600B1E1DC /* LeclonecoinAppTests.xctest */,
+				655723242A256E5600B1E1DC /* LeclonecoinAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		655723062A256E4E00B1E1DC /* LeclonecoinApp */ = {
+			isa = PBXGroup;
+			children = (
+				655723072A256E4E00B1E1DC /* AppDelegate.swift */,
+				655723092A256E4E00B1E1DC /* SceneDelegate.swift */,
+				6557230B2A256E4E00B1E1DC /* ViewController.swift */,
+				6557230D2A256E4E00B1E1DC /* Main.storyboard */,
+				655723102A256E5500B1E1DC /* Assets.xcassets */,
+				655723122A256E5500B1E1DC /* LaunchScreen.storyboard */,
+				655723152A256E5500B1E1DC /* Info.plist */,
+			);
+			path = LeclonecoinApp;
+			sourceTree = "<group>";
+		};
+		6557231D2A256E5600B1E1DC /* LeclonecoinAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6557231E2A256E5600B1E1DC /* LeclonecoinAppTests.swift */,
+			);
+			path = LeclonecoinAppTests;
+			sourceTree = "<group>";
+		};
+		655723272A256E5600B1E1DC /* LeclonecoinAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				655723282A256E5600B1E1DC /* LeclonecoinAppUITests.swift */,
+				6557232A2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift */,
+			);
+			path = LeclonecoinAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		655723032A256E4E00B1E1DC /* LeclonecoinApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6557232E2A256E5600B1E1DC /* Build configuration list for PBXNativeTarget "LeclonecoinApp" */;
+			buildPhases = (
+				655723002A256E4E00B1E1DC /* Sources */,
+				655723012A256E4E00B1E1DC /* Frameworks */,
+				655723022A256E4E00B1E1DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeclonecoinApp;
+			productName = LeclonecoinApp;
+			productReference = 655723042A256E4E00B1E1DC /* LeclonecoinApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		655723192A256E5600B1E1DC /* LeclonecoinAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655723312A256E5600B1E1DC /* Build configuration list for PBXNativeTarget "LeclonecoinAppTests" */;
+			buildPhases = (
+				655723162A256E5600B1E1DC /* Sources */,
+				655723172A256E5600B1E1DC /* Frameworks */,
+				655723182A256E5600B1E1DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6557231C2A256E5600B1E1DC /* PBXTargetDependency */,
+			);
+			name = LeclonecoinAppTests;
+			productName = LeclonecoinAppTests;
+			productReference = 6557231A2A256E5600B1E1DC /* LeclonecoinAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		655723232A256E5600B1E1DC /* LeclonecoinAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655723342A256E5600B1E1DC /* Build configuration list for PBXNativeTarget "LeclonecoinAppUITests" */;
+			buildPhases = (
+				655723202A256E5600B1E1DC /* Sources */,
+				655723212A256E5600B1E1DC /* Frameworks */,
+				655723222A256E5600B1E1DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				655723262A256E5600B1E1DC /* PBXTargetDependency */,
+			);
+			name = LeclonecoinAppUITests;
+			productName = LeclonecoinAppUITests;
+			productReference = 655723242A256E5600B1E1DC /* LeclonecoinAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		655722FC2A256E4E00B1E1DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					655723032A256E4E00B1E1DC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					655723192A256E5600B1E1DC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 655723032A256E4E00B1E1DC;
+					};
+					655723232A256E5600B1E1DC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 655723032A256E4E00B1E1DC;
+					};
+				};
+			};
+			buildConfigurationList = 655722FF2A256E4E00B1E1DC /* Build configuration list for PBXProject "LeclonecoinApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 655722FB2A256E4E00B1E1DC;
+			productRefGroup = 655723052A256E4E00B1E1DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				655723032A256E4E00B1E1DC /* LeclonecoinApp */,
+				655723192A256E5600B1E1DC /* LeclonecoinAppTests */,
+				655723232A256E5600B1E1DC /* LeclonecoinAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		655723022A256E4E00B1E1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655723142A256E5500B1E1DC /* LaunchScreen.storyboard in Resources */,
+				655723112A256E5500B1E1DC /* Assets.xcassets in Resources */,
+				6557230F2A256E4E00B1E1DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655723182A256E5600B1E1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655723222A256E5600B1E1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		655723002A256E4E00B1E1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6557230C2A256E4E00B1E1DC /* ViewController.swift in Sources */,
+				655723082A256E4E00B1E1DC /* AppDelegate.swift in Sources */,
+				6557230A2A256E4E00B1E1DC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655723162A256E5600B1E1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6557231F2A256E5600B1E1DC /* LeclonecoinAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655723202A256E5600B1E1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6557232B2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift in Sources */,
+				655723292A256E5600B1E1DC /* LeclonecoinAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6557231C2A256E5600B1E1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 655723032A256E4E00B1E1DC /* LeclonecoinApp */;
+			targetProxy = 6557231B2A256E5600B1E1DC /* PBXContainerItemProxy */;
+		};
+		655723262A256E5600B1E1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 655723032A256E4E00B1E1DC /* LeclonecoinApp */;
+			targetProxy = 655723252A256E5600B1E1DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6557230D2A256E4E00B1E1DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6557230E2A256E4E00B1E1DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		655723122A256E5500B1E1DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				655723132A256E5500B1E1DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6557232C2A256E5600B1E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6557232D2A256E5600B1E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6557232F2A256E5600B1E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7297456K9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeclonecoinApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		655723302A256E5600B1E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7297456K9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeclonecoinApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		655723322A256E5600B1E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7297456K9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeclonecoinApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeclonecoinApp";
+			};
+			name = Debug;
+		};
+		655723332A256E5600B1E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7297456K9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeclonecoinApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeclonecoinApp";
+			};
+			name = Release;
+		};
+		655723352A256E5600B1E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7297456K9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeclonecoinApp;
+			};
+			name = Debug;
+		};
+		655723362A256E5600B1E1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7297456K9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeclonecoinApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		655722FF2A256E4E00B1E1DC /* Build configuration list for PBXProject "LeclonecoinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6557232C2A256E5600B1E1DC /* Debug */,
+				6557232D2A256E5600B1E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6557232E2A256E5600B1E1DC /* Build configuration list for PBXNativeTarget "LeclonecoinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6557232F2A256E5600B1E1DC /* Debug */,
+				655723302A256E5600B1E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		655723312A256E5600B1E1DC /* Build configuration list for PBXNativeTarget "LeclonecoinAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655723322A256E5600B1E1DC /* Debug */,
+				655723332A256E5600B1E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		655723342A256E5600B1E1DC /* Build configuration list for PBXNativeTarget "LeclonecoinAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655723352A256E5600B1E1DC /* Debug */,
+				655723362A256E5600B1E1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 655722FC2A256E4E00B1E1DC /* Project object */;
+}
