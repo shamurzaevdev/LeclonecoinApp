@@ -10,7 +10,6 @@
 		655723082A256E4E00B1E1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723072A256E4E00B1E1DC /* AppDelegate.swift */; };
 		6557230A2A256E4E00B1E1DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723092A256E4E00B1E1DC /* SceneDelegate.swift */; };
 		6557230C2A256E4E00B1E1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557230B2A256E4E00B1E1DC /* ViewController.swift */; };
-		6557230F2A256E4E00B1E1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6557230D2A256E4E00B1E1DC /* Main.storyboard */; };
 		655723112A256E5500B1E1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655723102A256E5500B1E1DC /* Assets.xcassets */; };
 		655723142A256E5500B1E1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655723122A256E5500B1E1DC /* LaunchScreen.storyboard */; };
 		6557231F2A256E5600B1E1DC /* LeclonecoinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557231E2A256E5600B1E1DC /* LeclonecoinAppTests.swift */; };
@@ -40,7 +39,6 @@
 		655723072A256E4E00B1E1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655723092A256E4E00B1E1DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6557230B2A256E4E00B1E1DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6557230E2A256E4E00B1E1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		655723102A256E5500B1E1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655723132A256E5500B1E1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655723152A256E5500B1E1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				655723072A256E4E00B1E1DC /* AppDelegate.swift */,
 				655723092A256E4E00B1E1DC /* SceneDelegate.swift */,
 				6557230B2A256E4E00B1E1DC /* ViewController.swift */,
-				6557230D2A256E4E00B1E1DC /* Main.storyboard */,
 				655723102A256E5500B1E1DC /* Assets.xcassets */,
 				655723122A256E5500B1E1DC /* LaunchScreen.storyboard */,
 				655723152A256E5500B1E1DC /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				655723142A256E5500B1E1DC /* LaunchScreen.storyboard in Resources */,
 				655723112A256E5500B1E1DC /* Assets.xcassets in Resources */,
-				6557230F2A256E4E00B1E1DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6557230D2A256E4E00B1E1DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6557230E2A256E4E00B1E1DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		655723122A256E5500B1E1DC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +430,9 @@
 				INFOPLIST_FILE = LeclonecoinApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +440,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,9 +461,9 @@
 				INFOPLIST_FILE = LeclonecoinApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +471,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ASH.LeclonecoinApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
