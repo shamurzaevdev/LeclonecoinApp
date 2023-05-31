@@ -9,12 +9,35 @@
 /* Begin PBXBuildFile section */
 		655723082A256E4E00B1E1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723072A256E4E00B1E1DC /* AppDelegate.swift */; };
 		6557230A2A256E4E00B1E1DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723092A256E4E00B1E1DC /* SceneDelegate.swift */; };
-		6557230C2A256E4E00B1E1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557230B2A256E4E00B1E1DC /* ViewController.swift */; };
+		6557230C2A256E4E00B1E1DC /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557230B2A256E4E00B1E1DC /* ArticlesViewController.swift */; };
 		655723112A256E5500B1E1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655723102A256E5500B1E1DC /* Assets.xcassets */; };
 		655723142A256E5500B1E1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655723122A256E5500B1E1DC /* LaunchScreen.storyboard */; };
 		6557231F2A256E5600B1E1DC /* LeclonecoinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557231E2A256E5600B1E1DC /* LeclonecoinAppTests.swift */; };
 		655723292A256E5600B1E1DC /* LeclonecoinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723282A256E5600B1E1DC /* LeclonecoinAppUITests.swift */; };
 		6557232B2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557232A2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift */; };
+		6557233D2A25736300B1E1DC /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557233C2A25736300B1E1DC /* RouterProtocol.swift */; };
+		6557233F2A25737900B1E1DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557233E2A25737900B1E1DC /* Router.swift */; };
+		655723412A25739D00B1E1DC /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723402A25739D00B1E1DC /* APICaller.swift */; };
+		655723432A2573CC00B1E1DC /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723422A2573CC00B1E1DC /* FetchService.swift */; };
+		655723462A25740A00B1E1DC /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723452A25740A00B1E1DC /* BuilderProtocol.swift */; };
+		655723482A25742300B1E1DC /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723472A25742300B1E1DC /* Builder.swift */; };
+		6557234B2A25747D00B1E1DC /* ArticlesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557234A2A25747D00B1E1DC /* ArticlesData.swift */; };
+		6557234D2A25749A00B1E1DC /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557234C2A25749A00B1E1DC /* CategoryData.swift */; };
+		655723502A25751800B1E1DC /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557234F2A25751800B1E1DC /* ArticlesTableViewCell.swift */; };
+		655723522A25753E00B1E1DC /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723512A25753E00B1E1DC /* CategoriesCollectionViewCell.swift */; };
+		655723542A25755A00B1E1DC /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723532A25755A00B1E1DC /* CategoriesTableViewCell.swift */; };
+		655723562A25759100B1E1DC /* LeclonecoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723552A25759100B1E1DC /* LeclonecoinView.swift */; };
+		655723592A2575CB00B1E1DC /* ArticlesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723582A2575CB00B1E1DC /* ArticlesViewModelProtocol.swift */; };
+		6557235B2A2575E500B1E1DC /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557235A2A2575E500B1E1DC /* ArticlesViewModel.swift */; };
+		6557235F2A25764C00B1E1DC /* SelectedCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557235E2A25764C00B1E1DC /* SelectedCategoryViewController.swift */; };
+		655723612A25768100B1E1DC /* SelectedCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723602A25768100B1E1DC /* SelectedCategoryViewModel.swift */; };
+		655723632A25769600B1E1DC /* SelectedCategoryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723622A25769600B1E1DC /* SelectedCategoryViewModelProtocol.swift */; };
+		655723682A2576E500B1E1DC /* DetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723672A2576E500B1E1DC /* DetailsData.swift */; };
+		6557236A2A25770800B1E1DC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723692A25770800B1E1DC /* DetailsView.swift */; };
+		6557236C2A25773900B1E1DC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557236B2A25773900B1E1DC /* DetailsViewController.swift */; };
+		6557236E2A25775900B1E1DC /* DetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557236D2A25775900B1E1DC /* DetailsViewModelProtocol.swift */; };
+		655723702A25776D00B1E1DC /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557236F2A25776D00B1E1DC /* DetailsViewModel.swift */; };
+		655723752A2610B900B1E1DC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723742A2610B900B1E1DC /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +61,7 @@
 		655723042A256E4E00B1E1DC /* LeclonecoinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeclonecoinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655723072A256E4E00B1E1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655723092A256E4E00B1E1DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6557230B2A256E4E00B1E1DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6557230B2A256E4E00B1E1DC /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		655723102A256E5500B1E1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655723132A256E5500B1E1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655723152A256E5500B1E1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +70,29 @@
 		655723242A256E5600B1E1DC /* LeclonecoinAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeclonecoinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655723282A256E5600B1E1DC /* LeclonecoinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclonecoinAppUITests.swift; sourceTree = "<group>"; };
 		6557232A2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclonecoinAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6557233C2A25736300B1E1DC /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		6557233E2A25737900B1E1DC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		655723402A25739D00B1E1DC /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		655723422A2573CC00B1E1DC /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
+		655723452A25740A00B1E1DC /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
+		655723472A25742300B1E1DC /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		6557234A2A25747D00B1E1DC /* ArticlesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesData.swift; sourceTree = "<group>"; };
+		6557234C2A25749A00B1E1DC /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		6557234F2A25751800B1E1DC /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		655723512A25753E00B1E1DC /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		655723532A25755A00B1E1DC /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		655723552A25759100B1E1DC /* LeclonecoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclonecoinView.swift; sourceTree = "<group>"; };
+		655723582A2575CB00B1E1DC /* ArticlesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModelProtocol.swift; sourceTree = "<group>"; };
+		6557235A2A2575E500B1E1DC /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		6557235E2A25764C00B1E1DC /* SelectedCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryViewController.swift; sourceTree = "<group>"; };
+		655723602A25768100B1E1DC /* SelectedCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryViewModel.swift; sourceTree = "<group>"; };
+		655723622A25769600B1E1DC /* SelectedCategoryViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryViewModelProtocol.swift; sourceTree = "<group>"; };
+		655723672A2576E500B1E1DC /* DetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsData.swift; sourceTree = "<group>"; };
+		655723692A25770800B1E1DC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		6557236B2A25773900B1E1DC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6557236D2A25775900B1E1DC /* DetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		6557236F2A25776D00B1E1DC /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		655723742A2610B900B1E1DC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +143,15 @@
 		655723062A256E4E00B1E1DC /* LeclonecoinApp */ = {
 			isa = PBXGroup;
 			children = (
+				655723712A257B9800B1E1DC /* Extensions */,
+				655723372A2572D700B1E1DC /* Managers */,
+				655723442A2573E900B1E1DC /* Builder */,
+				655723382A2572E400B1E1DC /* Router */,
+				655723392A2572F600B1E1DC /* MainModule */,
+				6557233A2A25730600B1E1DC /* SelectedCategoryModule */,
+				6557233B2A25732700B1E1DC /* DetailsModule */,
 				655723072A256E4E00B1E1DC /* AppDelegate.swift */,
 				655723092A256E4E00B1E1DC /* SceneDelegate.swift */,
-				6557230B2A256E4E00B1E1DC /* ViewController.swift */,
 				655723102A256E5500B1E1DC /* Assets.xcassets */,
 				655723122A256E5500B1E1DC /* LaunchScreen.storyboard */,
 				655723152A256E5500B1E1DC /* Info.plist */,
@@ -122,6 +174,143 @@
 				6557232A2A256E5600B1E1DC /* LeclonecoinAppUITestsLaunchTests.swift */,
 			);
 			path = LeclonecoinAppUITests;
+			sourceTree = "<group>";
+		};
+		655723372A2572D700B1E1DC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				655723402A25739D00B1E1DC /* APICaller.swift */,
+				655723422A2573CC00B1E1DC /* FetchService.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		655723382A2572E400B1E1DC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6557233C2A25736300B1E1DC /* RouterProtocol.swift */,
+				6557233E2A25737900B1E1DC /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		655723392A2572F600B1E1DC /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				655723492A25746B00B1E1DC /* Model */,
+				6557234E2A2574A300B1E1DC /* View */,
+				655723572A2575A800B1E1DC /* ViewModel */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		6557233A2A25730600B1E1DC /* SelectedCategoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				6557235D2A25762400B1E1DC /* View */,
+				6557235C2A25760400B1E1DC /* ViewModel */,
+			);
+			path = SelectedCategoryModule;
+			sourceTree = "<group>";
+		};
+		6557233B2A25732700B1E1DC /* DetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				655723662A2576CC00B1E1DC /* Model */,
+				655723652A2576C400B1E1DC /* View */,
+				655723642A2576B600B1E1DC /* ViewModel */,
+			);
+			path = DetailsModule;
+			sourceTree = "<group>";
+		};
+		655723442A2573E900B1E1DC /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				655723452A25740A00B1E1DC /* BuilderProtocol.swift */,
+				655723472A25742300B1E1DC /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		655723492A25746B00B1E1DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6557234A2A25747D00B1E1DC /* ArticlesData.swift */,
+				6557234C2A25749A00B1E1DC /* CategoryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6557234E2A2574A300B1E1DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6557230B2A256E4E00B1E1DC /* ArticlesViewController.swift */,
+				6557234F2A25751800B1E1DC /* ArticlesTableViewCell.swift */,
+				655723512A25753E00B1E1DC /* CategoriesCollectionViewCell.swift */,
+				655723532A25755A00B1E1DC /* CategoriesTableViewCell.swift */,
+				655723552A25759100B1E1DC /* LeclonecoinView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		655723572A2575A800B1E1DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				655723582A2575CB00B1E1DC /* ArticlesViewModelProtocol.swift */,
+				6557235A2A2575E500B1E1DC /* ArticlesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6557235C2A25760400B1E1DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				655723602A25768100B1E1DC /* SelectedCategoryViewModel.swift */,
+				655723622A25769600B1E1DC /* SelectedCategoryViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6557235D2A25762400B1E1DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6557235E2A25764C00B1E1DC /* SelectedCategoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		655723642A2576B600B1E1DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6557236D2A25775900B1E1DC /* DetailsViewModelProtocol.swift */,
+				6557236F2A25776D00B1E1DC /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		655723652A2576C400B1E1DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				655723692A25770800B1E1DC /* DetailsView.swift */,
+				6557236B2A25773900B1E1DC /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		655723662A2576CC00B1E1DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				655723672A2576E500B1E1DC /* DetailsData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		655723712A257B9800B1E1DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				655723742A2610B900B1E1DC /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +443,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6557230C2A256E4E00B1E1DC /* ViewController.swift in Sources */,
+				655723612A25768100B1E1DC /* SelectedCategoryViewModel.swift in Sources */,
+				6557236C2A25773900B1E1DC /* DetailsViewController.swift in Sources */,
+				6557230C2A256E4E00B1E1DC /* ArticlesViewController.swift in Sources */,
+				655723462A25740A00B1E1DC /* BuilderProtocol.swift in Sources */,
+				655723562A25759100B1E1DC /* LeclonecoinView.swift in Sources */,
+				655723412A25739D00B1E1DC /* APICaller.swift in Sources */,
 				655723082A256E4E00B1E1DC /* AppDelegate.swift in Sources */,
+				655723502A25751800B1E1DC /* ArticlesTableViewCell.swift in Sources */,
+				655723542A25755A00B1E1DC /* CategoriesTableViewCell.swift in Sources */,
+				6557233F2A25737900B1E1DC /* Router.swift in Sources */,
+				655723522A25753E00B1E1DC /* CategoriesCollectionViewCell.swift in Sources */,
+				655723482A25742300B1E1DC /* Builder.swift in Sources */,
+				655723702A25776D00B1E1DC /* DetailsViewModel.swift in Sources */,
+				655723632A25769600B1E1DC /* SelectedCategoryViewModelProtocol.swift in Sources */,
+				655723752A2610B900B1E1DC /* String+Extensions.swift in Sources */,
+				6557236E2A25775900B1E1DC /* DetailsViewModelProtocol.swift in Sources */,
+				6557233D2A25736300B1E1DC /* RouterProtocol.swift in Sources */,
+				6557235F2A25764C00B1E1DC /* SelectedCategoryViewController.swift in Sources */,
+				655723432A2573CC00B1E1DC /* FetchService.swift in Sources */,
+				6557234D2A25749A00B1E1DC /* CategoryData.swift in Sources */,
+				6557234B2A25747D00B1E1DC /* ArticlesData.swift in Sources */,
+				6557236A2A25770800B1E1DC /* DetailsView.swift in Sources */,
+				655723682A2576E500B1E1DC /* DetailsData.swift in Sources */,
 				6557230A2A256E4E00B1E1DC /* SceneDelegate.swift in Sources */,
+				6557235B2A2575E500B1E1DC /* ArticlesViewModel.swift in Sources */,
+				655723592A2575CB00B1E1DC /* ArticlesViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
