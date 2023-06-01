@@ -29,16 +29,14 @@ final class APICaller {
     func fetchData<T: Decodable>(type: T.Type, from urlPath: String, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = URL(string: "\(Constants.baseURL)\(urlPath)") else { return }
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
-            if let error = error {
-                completion(.failure(error))
+            guard error == nil else {
+                completion(.failure(error!))
                 return
             }
-                
             guard let data = data else {
                 completion(.failure(APIError.failedToGetData))
                 return
             }
-                
             do {
                 let results = try JSONDecoder().decode(T.self, from: data)
                 completion(.success(results))

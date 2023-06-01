@@ -113,22 +113,22 @@ final class ArticlesTableViewCell: UITableViewCell {
     // MARK: Private methods
     
     private func loadImage(from url: String) {
-        if let imageUrlString = URL(string: url) {
-            currentTask = URLSession.shared.dataTask(with: imageUrlString) { data, response, error in
-                if let data = data, let image = UIImage(data: data), error == nil {
-                    DispatchQueue.main.async {
-                        self.articleImageView.image = image
-                    }
-                } else {
-                    DispatchQueue.main.async {
-                        self.articleImageView.image = UIImage(named: "defaultPicture")
-                    }
-                }
-            }
-            currentTask?.resume()
-        } else {
+        guard let imageUrlString = URL(string: url) else {
             self.articleImageView.image = UIImage(named: "defaultPicture")
+            return
         }
+        currentTask = URLSession.shared.dataTask(with: imageUrlString) { data, response, error in
+            guard error == nil, let data = data, let image = UIImage(data: data) else {
+                DispatchQueue.main.async {
+                    self.articleImageView.image = UIImage(named: "defaultPicture")
+                }
+                return
+            }
+            DispatchQueue.main.async {
+                self.articleImageView.image = image
+            }
+        }
+        currentTask?.resume()
     }
     
     private func setupUI() {

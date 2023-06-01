@@ -61,13 +61,12 @@ final class DetailsViewController: UIViewController {
     }
     
     private func setupImage() {
-        if let imageURLString = viewModel.detailsData.imagesUrl?.thumb {
-            print("Loading image from URL: \(imageURLString)")
-            viewModel.loadImage(from: imageURLString) { [weak self] image in
-                self?.detailsView.imageView.image = image
-            }
-        } else {
-        detailsView.imageView.image = UIImage(named: "defaultPicture")
+        guard let imageURLString = viewModel.detailsData.imagesUrl?.thumb else {
+            detailsView.imageView.image = UIImage(named: "defaultPicture")
+            return
+        }
+        viewModel.loadImage(from: imageURLString) { [weak self] image in
+            self?.detailsView.imageView.image = image
         }
     }
 }

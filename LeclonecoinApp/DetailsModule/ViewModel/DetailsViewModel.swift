@@ -32,26 +32,20 @@ final class DetailsViewModel: DetailsViewModelProtocol {
     // MARK: - Public Merhods
     
     func loadImage(from url: String, completion: @escaping (UIImage?) -> Void) {
-        if url.isEmpty {
+        guard !url.isEmpty, let imageUrl = URL(string: url) else {
             completion(UIImage(named: "defaultPicture"))
-        } else if let imageUrl = URL(string: url) {
-            let currentTask = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
-                var image: UIImage? = nil
-                if let data = data, let downloadedImage = UIImage(data: data), error == nil {
-                    image = downloadedImage
-                } else {
-                    print("Failed to download image, using default.")
-                    image = UIImage(named: "defaultPicture")
-                }
-                DispatchQueue.main.async {
-                    completion(image)
-                }
-            }
-            currentTask.resume()
-        } else {
-            print("Invalid URL, using default image.")
-            completion(UIImage(named: "defaultPicture"))
+            return
         }
+        let currentTask = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
+            guard error == nil, let data = data, let downloadedImage = UIImage(data: data) else {
+                completion(UIImage(named: "defaultPicture"))
+                return
+            }
+            DispatchQueue.main.async {
+                completion(downloadedImage)
+            }
+        }
+        currentTask.resume()
     }
     
     // MARK: - Private Methods

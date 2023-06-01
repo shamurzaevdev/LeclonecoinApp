@@ -80,5 +80,5 @@ extension SelectedCategoryViewController: UITableViewDataSource {
 extension SelectedCategoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel?.selectArticle(at: indexPath.row)
-            }
+    }
 }

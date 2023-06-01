@@ -55,7 +55,7 @@ enum CodingKeys: String, CodingKey {
 // MARK: - ImagesURL
                                         
 /// A struct that represents the data for images.
-struct ImagesURL: Decodable {
+struct ImagesURL: Decodable, Equatable {
      
     /// small: URL for a small-sized image.
     let small: String?

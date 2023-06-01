@@ -138,10 +138,13 @@ final class ArticlesViewModel: ArticlesViewModelProtocol {
             }
         }
         return sortedArticles
-        }
+    }
     
-    func item(at index: Int) -> ArticlesData {
-        articles[index]
+    func item(at index: Int) -> ArticlesData? {
+        guard index >= 0 && index < articles.count else {
+            return nil
+        }
+        return articles[index]
     }
     
     func pushToDetailViewController(indexPath: Int) {
