@@ -8,7 +8,7 @@
 import XCTest
 @testable import LeclonecoinApp
 
-class DetailsViewModelTests: XCTestCase {
+final class DetailsViewModelTests: XCTestCase {
     
     var viewModel: DetailsViewModel!
     var articleData: ArticlesData!
@@ -24,8 +24,8 @@ class DetailsViewModelTests: XCTestCase {
                                    imagesUrl: ImagesURL(small: "small_url", thumb: "thumb_url"),
                                    price: 100,
                                    creationDate: "2023-06-01T00:00:00+0000",
-                                   isUrgent: false,
-                                   siret: "12345678901234")
+                                   siret: "12345678901234",
+                                   isUrgent: false)
                                    
         categoryData = CategoryData(id: 1, name: "cat")
         

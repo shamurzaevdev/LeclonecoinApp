@@ -7,13 +7,14 @@
 
 import UIKit
 
-struct ArticlesTableViewConstants {
-    static let padding: CGFloat = 10
-    static let imageViewSize: CGFloat = 150
-}
-
 /// `ArticlesTableViewCell` is a custom table view cell used to display an article. It includes several labels to display information about the article, an image view to display the article's image, and a currentTask property to handle image loading.
 final class ArticlesTableViewCell: UITableViewCell {
+    
+    enum ArticlesTableViewConstants {
+        static let padding: CGFloat = 10
+        static let imageViewSize: CGFloat = 150
+        static let defaultImage = UIImage(named: "defaultPicture")
+    }
 
     // MARK: - Static property
     
@@ -114,13 +115,13 @@ final class ArticlesTableViewCell: UITableViewCell {
     
     private func loadImage(from url: String) {
         guard let imageUrlString = URL(string: url) else {
-            self.articleImageView.image = UIImage(named: "defaultPicture")
+            self.articleImageView.image = ArticlesTableViewConstants.defaultImage
             return
         }
         currentTask = URLSession.shared.dataTask(with: imageUrlString) { data, response, error in
             guard error == nil, let data = data, let image = UIImage(data: data) else {
                 DispatchQueue.main.async {
-                    self.articleImageView.image = UIImage(named: "defaultPicture")
+                    self.articleImageView.image = ArticlesTableViewConstants.defaultImage
                 }
                 return
             }
@@ -133,12 +134,7 @@ final class ArticlesTableViewCell: UITableViewCell {
     
     private func setupUI() {
         
-        contentView.addSubview(articleImageView)
-        contentView.addSubview(itemLabel)
-        contentView.addSubview(categoryLabel)
-        contentView.addSubview(priceLabel)
-        contentView.addSubview(urgentLabel)
-        contentView.addSubview(dateLabel)
+        contentView.addSubviews(articleImageView, itemLabel, categoryLabel, priceLabel, urgentLabel, dateLabel)
         
         NSLayoutConstraint.activate([
             articleImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,

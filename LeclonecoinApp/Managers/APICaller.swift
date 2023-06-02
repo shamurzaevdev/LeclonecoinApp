@@ -7,18 +7,22 @@
 
 import Foundation
 
-// MARK: - Constants
 
-struct Constants {
-    static let baseURL = "https://raw.githubusercontent.com/leboncoin/paperclip/master/"
-}
-
-enum APIError: Error {
-    case failedToGetData
-}
 
 /// A Class that fetches the data from needed API
 final class APICaller {
+    
+    // MARK: APIError
+    
+    enum APIError: Error {
+        case failedToGetData
+    }
+    
+    // MARK: - Constants
+    
+    enum Constants {
+        static let baseURL = "https://raw.githubusercontent.com/leboncoin/paperclip/master/"
+    }
     
     // MARK: - Properties
     

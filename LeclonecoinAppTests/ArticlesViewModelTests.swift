@@ -27,8 +27,8 @@ final class FetchServiceMock: FetchServiceProtocol {
                                                               thumb: "https://example.com/thumb"),
                                                 price: 100,
                                                 creationDate: "2023-06-02",
-                                                isUrgent: false,
-                                                siret: "123123123"),
+                                                siret: "123123123",
+                                                isUrgent: false),
                                     ArticlesData(id: 2,
                                                  categoryId: 1,
                                                  title: "Mock Urgent Title",
@@ -38,8 +38,8 @@ final class FetchServiceMock: FetchServiceProtocol {
                                                               thumb: "https://example.com/thumb"),
                                                  price: 200,
                                                  creationDate: "2023-06-01",
-                                                 isUrgent: true,
-                                                 siret: "123123123")]
+                                                 siret: "123123123",
+                                                 isUrgent: true)]
             completion(.success(articlesDataMock as! T))
         } else if T.self == [CategoryData].self {
             let categoryDataMock = [CategoryData(id: 1,

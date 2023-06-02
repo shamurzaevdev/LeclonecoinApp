@@ -10,13 +10,17 @@ import UIKit
 /// `LeclonecoinView` is a custom UIView that displays an image representing the logo of LeclonecoinApplication.
 final class LeclonecoinView: UIView {
     
+    enum Constants {
+        static let logoImageView = UIImage(named: "leCloneCoinLogo")
+    }
+    
     // MARK: Private properties
     
     private let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "leCloneCoinLogo")
+        imageView.image = Constants.logoImageView
         return imageView
     }()
     

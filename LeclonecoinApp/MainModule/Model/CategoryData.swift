@@ -11,13 +11,10 @@ import Foundation
 
 /// A struct that represents the data for categories.
 struct CategoryData: Decodable {
-    
     /// id: unique identifier for the category.
     let id: Int
-    
     /// name: name of the category.
     let name: String
-    
     /// image: the images for the categories.
     var imageName: String?
 }

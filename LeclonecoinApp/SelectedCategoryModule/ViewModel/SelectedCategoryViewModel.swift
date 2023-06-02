@@ -11,6 +11,7 @@ import Foundation
 final class SelectedCategoryViewModel: SelectedCategoryViewModelProtocol {
     
     // MARK: - Private prorerties
+    
     private var articles: [ArticlesData]
     private var router: RouterProtocol
     

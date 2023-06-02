@@ -9,6 +9,11 @@ import UIKit
 
 /// `DetailsViewController` is a custom UIViewController that manages the presentation of detailed information about a particular item in a `DetailsView`.
 final class DetailsViewController: UIViewController {
+    
+    enum DetailsViewControllerConstants {
+        static let defaultImage = UIImage(named: "defaultPicture")
+    }
+    
     // MARK: - Private Properties
     
     private let detailsView = DetailsView()
@@ -62,7 +67,7 @@ final class DetailsViewController: UIViewController {
     
     private func setupImage() {
         guard let imageURLString = viewModel.detailsData.imagesUrl?.thumb else {
-            detailsView.imageView.image = UIImage(named: "defaultPicture")
+            detailsView.imageView.image = DetailsViewControllerConstants.defaultImage
             return
         }
         viewModel.loadImage(from: imageURLString) { [weak self] image in

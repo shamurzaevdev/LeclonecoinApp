@@ -41,6 +41,7 @@
 		655723772A2820AF00B1E1DC /* ArticlesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723762A2820AF00B1E1DC /* ArticlesViewModelTests.swift */; };
 		655723792A28DBC800B1E1DC /* SelectedCategoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655723782A28DBC800B1E1DC /* SelectedCategoryViewModelTests.swift */; };
 		6557237B2A29023A00B1E1DC /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557237A2A29023A00B1E1DC /* DetailsViewModelTests.swift */; };
+		6557237D2A2AA12900B1E1DC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557237C2A2AA12800B1E1DC /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		655723762A2820AF00B1E1DC /* ArticlesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModelTests.swift; sourceTree = "<group>"; };
 		655723782A28DBC800B1E1DC /* SelectedCategoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryViewModelTests.swift; sourceTree = "<group>"; };
 		6557237A2A29023A00B1E1DC /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
+		6557237C2A2AA12800B1E1DC /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				655723742A2610B900B1E1DC /* String+Extensions.swift */,
+				6557237C2A2AA12800B1E1DC /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				6557233F2A25737900B1E1DC /* Router.swift in Sources */,
 				655723522A25753E00B1E1DC /* CategoriesCollectionViewCell.swift in Sources */,
 				655723482A25742300B1E1DC /* Builder.swift in Sources */,
+				6557237D2A2AA12900B1E1DC /* UIView+Extensions.swift in Sources */,
 				655723702A25776D00B1E1DC /* DetailsViewModel.swift in Sources */,
 				655723632A25769600B1E1DC /* SelectedCategoryViewModelProtocol.swift in Sources */,
 				655723752A2610B900B1E1DC /* String+Extensions.swift in Sources */,

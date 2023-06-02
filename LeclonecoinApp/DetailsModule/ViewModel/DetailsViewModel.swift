@@ -11,6 +11,10 @@ import UIKit
 /// A view model responsible for managing the data and show the data on the details screen
 final class DetailsViewModel: DetailsViewModelProtocol {
     
+    enum DetailsViewModelConstants {
+        static let defaultImage = UIImage(named: "defaultPicture")
+    }
+    
     // MARK: - Private Properties
     
     private let articleData: ArticlesData
@@ -33,12 +37,12 @@ final class DetailsViewModel: DetailsViewModelProtocol {
     
     func loadImage(from url: String, completion: @escaping (UIImage?) -> Void) {
         guard !url.isEmpty, let imageUrl = URL(string: url) else {
-            completion(UIImage(named: "defaultPicture"))
+            completion(DetailsViewModelConstants.defaultImage)
             return
         }
         let currentTask = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
             guard error == nil, let data = data, let downloadedImage = UIImage(data: data) else {
-                completion(UIImage(named: "defaultPicture"))
+                completion(DetailsViewModelConstants.defaultImage)
                 return
             }
             DispatchQueue.main.async {
@@ -59,7 +63,7 @@ final class DetailsViewModel: DetailsViewModelProtocol {
                            imagesUrl: articleData.imagesUrl,
                            price: articleData.price,
                            creationDate: creationDate,
-                           isUrgent: articleData.isUrgent,
-                           siret: articleData.siret)
+                           siret: articleData.siret,
+                           isUrgent: articleData.isUrgent)
     }
 }

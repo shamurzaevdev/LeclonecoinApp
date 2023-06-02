@@ -108,7 +108,6 @@ final class DetailsView: UIView {
         setupScrollView()
         setupContentView()
         setupSubViews()
-        
     }
     
     private func setupScrollView() {
@@ -135,23 +134,14 @@ final class DetailsView: UIView {
     }
     
     private func setupSubViews() {
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(imageView)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(categoryLabel)
-        contentView.addSubview(priceLabel)
-        contentView.addSubview(urgentLabel)
-        contentView.addSubview(siretLabel)
-        contentView.addSubview(creationLabel)
-            
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        categoryLabel.translatesAutoresizingMaskIntoConstraints = false
-        priceLabel.translatesAutoresizingMaskIntoConstraints = false
-        urgentLabel.translatesAutoresizingMaskIntoConstraints = false
-        siretLabel.translatesAutoresizingMaskIntoConstraints = false
-        creationLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let subviews = [titleLabel, imageView, descriptionLabel, categoryLabel,
+                        priceLabel, urgentLabel, siretLabel, creationLabel]
+        
+        contentView.addSubviews(titleLabel, imageView, descriptionLabel, categoryLabel,
+                                priceLabel, urgentLabel, siretLabel, creationLabel)
+        
+        subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: DetailsViewConstants.padding),
